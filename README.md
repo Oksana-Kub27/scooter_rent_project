@@ -1,1 +1,7 @@
-# scooter_rent_project
+# Scooter Rent Project
+
+Оксана Кубликова 27-я когорта финальный проект курса "Инженер по тестированию плюс".
+
+## Как запустить автотест
+1. Установливаю зависимости: `pip install requests`.
+2. Запускаю тест: `python test_order_api.py`.

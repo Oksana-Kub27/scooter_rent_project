@@ -1,24 +1,10 @@
-# Scooter Rent Project
+# Проект автотестов для API сервиса аренды самокатов
 
-Оксана Кубликова 27-я когорта финальный проект курса "Инженер по тестированию плюс".
+Проект создан для автоматизации тестирования API сервиса аренды самокатов. В рамках проекта реализован тест, который проверяет создание заказа и получение информации о заказе по его треку.
 
-## Как запустить автотест
-1. Установливаю зависимости: `pip install requests`.
-2. Запускаю тест: `python test_order_api.py`.
+## Как установить и запустить проект
 
-### Задание 1
-```sql
-SELECT "Couriers".login, COUNT("Orders".id) AS orders_in_delivery
-FROM "Couriers"
-JOIN "Orders" ON "Couriers".id = "Orders"."courierId"
-WHERE "Orders".inDelivery = true
-GROUP BY "Couriers".login;
-Задание 2 
-SELECT track,
-       CASE
-           WHEN finished = true THEN 2
-           WHEN cancelled = true THEN -1
-           WHEN inDelivery = true THEN 1
-           ELSE 0
-       END AS status
-FROM "Orders";
+1. Установлен Python 3.x.
+2. Установите необходимые зависимости, выполнив команду:
+   ```bash
+   pip install -r requirements.txt
